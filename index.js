@@ -21,3 +21,12 @@ let a = document.querySelector(".btn");
 a.addEventListener("click", function(){
     alert("You subscribed")
 })
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('open');
+});
+document.querySelector('.close-menu').addEventListener('click', function() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.remove('open');
+});
