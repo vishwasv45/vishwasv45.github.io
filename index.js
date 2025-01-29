@@ -1,3 +1,16 @@
+window.dataLayer = {
+    'event': 'pageView',
+    'pageView': 'guest',
+    'userId': '12345', 
+    'userType': 'guest', 
+    'pageCategory': 'home', 
+    'pageTitle': document.title, 
+    'timestamp': new Date().toString(),
+    'pageUrl': window.location.href, 
+   
+};
+console.log(window.dataLayer)
+
 document.addEventListener('DOMContentLoaded',()=>{
     const slides=[
         'url("/slides/slide-01.jpg")',
@@ -30,3 +43,4 @@ document.querySelector('.close-menu').addEventListener('click', function() {
     const mobileNav = document.querySelector('.mobile-nav');
     mobileNav.classList.remove('open');
 });
+
