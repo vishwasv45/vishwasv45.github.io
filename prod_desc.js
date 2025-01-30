@@ -75,20 +75,19 @@ const productData = {
    
 };
 
-// Get the productId from the URL
+
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("productId");
 
-// Get the product data based on the productId
+
 const product = productData[productId];
 
-// Display the product details if the product exists
 if (product) {
     document.getElementById("productImage").src = product.image;
     document.getElementById("productTitle").innerText = product.title;
     document.getElementById("productPrice").innerText = product.price; // Display price
     document.getElementById("productDescription").innerText = product.description;
 } else {
-    // Handle case if the productId is invalid or not found
+   
     document.querySelector(".product-details-container").innerHTML = "<p>Product not found.</p>";
 }

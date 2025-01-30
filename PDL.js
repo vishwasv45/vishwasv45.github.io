@@ -24,6 +24,9 @@ window.dataLayer = {
     { id: 11, title: "Jeans", price: "$40.00", image: "/product/product-11.jpg" },
     { id: 12, title: "Jeans", price: "$40.00", image: "/product/product-12.jpg" },
     { id: 13, title: "Jeans", price: "$40.00", image: "/product/product-13.jpg" },
+    { id: 14, title: "Jeans", price: "$40.00", image: "/product/product-13.jpg" },
+    { id: 15, title: "Jeans", price: "$40.00", image: "/product/product-13.jpg" },
+    { id: 16, title: "Jeans", price: "$40.00", image: "/product/product-13.jpg" },
     
 ];
  
