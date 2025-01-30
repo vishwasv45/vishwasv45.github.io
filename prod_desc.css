@@ -108,6 +108,104 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* Display products container */
+.display-prod {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Create responsive grid layout */
+    gap: 20px; /* Add spacing between product items */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-items: center; /* Center items in each grid cell */
+}
+
+/* Product Card */
+.display-prod .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Hover effect for product card */
+.display-prod .product-card:hover {
+    transform: translateY(-10px); /* Slightly raise the product card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Product image */
+.display-prod .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on product image */
+.display-prod .product-card:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product title */
+.display-prod .product-card h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Product price */
+.display-prod .product-card .price {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Price hover effect */
+.display-prod .product-card:hover h3 {
+    color: #0066cc; /* Change title color on hover */
+}
+
+/* "Add to Cart" Button */
+.display-prod .product-card .btn {
+    padding: 8px 20px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.display-prod .product-card .btn:hover {
+    background-color: #004d99; /* Darker blue when hovered */
+}
+#productImage{
+width: 500px;
+height: 600px;
+}
+.product-details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main-foot{
     display: flex;
     justify-content: space-around;
