@@ -1,6 +1,4 @@
 
-console.log(window.dataLayer)
-
 document.addEventListener('DOMContentLoaded',()=>{
     const slides=[
         'url("/slides/slide-01.jpg")',
