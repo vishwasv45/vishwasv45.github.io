@@ -1,14 +1,4 @@
-window.dataLayer = {
-    'event': 'pageView',
-    'pageView': 'guest',
-    'userId': '12345', 
-    'userType': 'guest', 
-    'pageCategory': 'home', 
-    'pageTitle': document.title, 
-    'timestamp': new Date().toString(),
-    'pageUrl': window.location.href, 
-   
-};
+
 
  const products = [
     { id: 1, title: "Shirt", price: "$25.99", image: "/product/product-01.jpg" },

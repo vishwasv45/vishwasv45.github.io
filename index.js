@@ -1,14 +1,4 @@
-window.dataLayer = {
-    event: 'pageView',
-    pageView: 'guest',
-    userId: '12345', 
-    userType: 'guest', 
-    pageCategory: 'home', 
-    pageTitle: document.title, 
-    timestamp: new Date().toString(),
-    pageUrl: window.location.href, 
-   
-};
+
 console.log(window.dataLayer)
 
 document.addEventListener('DOMContentLoaded',()=>{

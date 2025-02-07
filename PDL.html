@@ -6,6 +6,21 @@
     <title>PDL</title>
     <link rel="stylesheet" href="PDL.css">
     <script>
+      window.dataLayer = {
+  event: 'pageView',
+  pageView: 'guest',
+  userId: '12345', 
+  userType: 'guest', 
+  pageCategory: 'home', 
+  pageTitle: document.title, 
+  timestamp: new Date().toString(),
+  pageUrl: window.location.href, 
+  categoryId:"pdl"
+  
+ 
+};
+  </script>
+    <script>
       !function(e,a,n,t){var i=e.head;if(i){
       if (a) return;
       var o=e.createElement("style");
@@ -76,7 +91,7 @@
         
           <section>
             <div class="display-prod" id="productContainer">
-                <!-- Product cards will be inserted here dynamically -->
+              
             </div>
         </section>
 </div>

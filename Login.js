@@ -1,14 +1,4 @@
-window.dataLayer = {
-    'event': 'pageView',
-    'pageView': 'guest',
-    'userId': '12345', 
-    'userType': 'guest', 
-    'pageCategory': 'home', 
-    'pageTitle': document.title, 
-    'timestamp': new Date().toString(),
-    'pageUrl': window.location.href, 
-   
-};
+
 function validateForm() {
     const email = document.querySelector('.input-email').value;
     const phoneNumber = document.querySelector('.input-number').value;
