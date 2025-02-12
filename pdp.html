@@ -5,19 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesh Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script>
-      window.dataLayer = { 
-        pageName: "index",
-        pageView:"index",
-        userType: "Guest",
-        userID:"8C2811a503C7c5a",
-        PageTitle:document.title,
-        timestamp:new Date().toString(),
-        pageUrl:window.location.href,
-        categoryId:"index",
-      };
-    </script>
+    <link rel="stylesheet" href="pdpstyle.css">
     <script src="script.js"></script>
     <script>
       !(function (e,a,n,t) {
@@ -63,12 +51,12 @@
         </div>
     
         <nav class="nav-links">
-          <a href="index.html">Home</a>
+          <a href="#">Home</a>
           <a href="plp.html">Shop</a>
-          <a href="features.html" class="features-link">Features<span class="hot">HOT</span></a>
-          <a href="blog.html">Blog</a>
-          <a href="about.html">About</a>
-          <a href="signin.html">Sign In</a>
+          <a href="#" class="features-link">Features<span class="hot">HOT</span></a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </nav>
     
         <div class="icons">
@@ -80,55 +68,109 @@
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
           </svg></div>
         </a>
-          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-          </svg></div>
+          <a href="cart.html">
+            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg></div>
+          </a>
         </div>
-
-        <div class="mobile-toggle" onclick="toggleNavbar()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path d="M2 2h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z"/>
-          </svg>
-      </div>
     </header>
 
-    <div class="banner-img">
-      <div class="banner-content">
-          <h1 class="banner-txt">NEW ARRIVALS</h1>
-          <button class="banner-btn">View More</button>
-      </div>
-      <!-- Arrow Buttons -->
-      <button class="prev-arrow">&#10094;</button>
-      <button class="next-arrow">&#10095;</button>
+    <div class="header2">
+        <a href="#">Home</a> > <a href="#">Women</a> > <span>Esprit Ruffle Shirt</span>
+    </div>
+
+    <main class="product-container">
+        <div class="product-images">
+          <div class="thumbnail-gallery">
+            <img src="images/product-detail-01.jpg" alt="Thumbnail 1">
+            <img src="images/product-detail-02.jpg" alt="Thumbnail 2">
+            <img src="images/product-detail-03.jpg" alt="Thumbnail 3">
+          </div>
+          <div class="main-image">
+            <img class="product-image" src="images/product-01.jpg" alt="Product Image">
+          </div>
+        </div>
+    
+        <div class="product-details">
+          <h2 class="product-title"></h2>
+          <p class="price"></p>
+          <p class="description"></p>
+          <form>
+            <div class="select-group">
+              <label for="size">Size</label>
+              <select id="size" name="size">
+                <option>Choose an option</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label for="color">Color</label>
+              <select id="color" name="color">
+                <option>Choose an option</option>
+              </select>
+            </div>
+            <div class="quantity-group">
+              <button type="button" class="quantity-btn">-</button>
+              <input type="number" value="1" min="1">
+              <button type="button" class="quantity-btn">+</button>
+            </div>
+            <button type="submit" class="add-to-cart">Add to Cart</button>
+          </form>
+          
+    
+            <div class="social">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                  </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                  </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                  </svg></a>
+            </div>
+        </div>
+    </main>
+
+    <div class="desc-container">
+        <div class="tabs">
+          <div class="tab active" onclick="showTab('description')">Description</div>
+          <div class="tab" onclick="showTab('additional-info')">Additional Information</div>
+          <div class="tab" onclick="showTab('reviews')">Reviews (1)</div>
+        </div>
+    
+        <div id="description" class="tab-content active">
+          <p>
+            Aenean sit amet gravida nisi. Nam fermentum est felis, quis feugiat nunc fringilla sit amet. Ut in blandit ipsum. 
+            Quisque luctus dui at ante aliquet, in hendrerit lectus interdum. Morbi elementum sapien rhoncus pretium maximus.
+          </p>
+        </div>
+        <div id="additional-info" class="tab-content">
+          <p>
+            Additional information content goes here.
+          </p>
+        </div>
+        <div id="reviews" class="tab-content">
+          <p>
+            User reviews go here.
+          </p>
+        </div>
+    </div>
+
+    <div class="desc-footer">
+        <span>SKU: JAK-01</span>
+        <span>Categories: Jacket, Men</span>
+    </div>
+
+    <div class="center-container">
+        <h2 class="load-more">Related Products</h2>
     </div> 
 
-    <div class="categories">
-      <div class="category-card">
-          <div class="category-info">
-              <h2>Women</h2>
-              <p>Spring 2018</p>
-          </div>
-          <img src="images/banner-04.jpg" alt="Women">
-          <button class="view-more">View More</button>
-      </div>  
-      <div class="category-card">
-          <div class="category-info">
-              <h2>Men</h2>
-              <p>Spring 2018</p>
-          </div>
-          <img src="images/banner-05.jpg" alt="Men">
-          <button class="view-more">View More</button>
-      </div>
-        <div class="category-card">
-          <div class="category-info">
-              <h2>Accessories</h2>
-              <p>New Trend</p>
-          </div>
-          <img src="images/banner-03.jpg" alt="Accessories">
-          <button class="view-more">View More</button>
-      </div>
-    </div>
-  
+    <div class="product-grid"></div>
+
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-column">
@@ -169,12 +211,11 @@
           </div>
           <div class="footer-column">
             <h3>NEWSLETTER</h3>
-            <form id="newsletter-form">
-              <input type="email" id="email-input" placeholder="email@example.com" required />
+            <form>
+              <input type="email" placeholder="email@example.com" required />
               <button type="submit">SUBSCRIBE</button>
             </form>
           </div>
-          <div id="popup-message" class="hidden"></div>
         </div>
         <div class="footer-bottom">
           <div class="payment-icons">
