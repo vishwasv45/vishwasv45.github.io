@@ -74,20 +74,50 @@ const productData = {
     
    
 };
-
-
 const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("productId");
+const productId = urlParams.get('productId');
 
-
-const product = productData[productId];
+const product = productData[productId]; // Get product details using the productId
 
 if (product) {
-    document.getElementById("productImage").src = product.image;
-    document.getElementById("productTitle").innerText = product.title;
-    document.getElementById("productPrice").innerText = product.price; // Display price
-    document.getElementById("productDescription").innerText = product.description;
+    const productDetails = document.getElementById("productDetails");
+    productDetails.innerHTML = `
+        <img src="${product.image}" alt="${product.title}" />
+        <h2>${product.title}</h2>
+        <p>Price: ${product.price}</p>
+        <p>Description: ${product.description}</p>
+    `;
 } else {
-   
-    document.querySelector(".product-details-container").innerHTML = "<p>Product not found.</p>";
+    document.getElementById("productDetails").innerHTML = "<p>Product not found.</p>";
 }
+
+
+function displayRelatedProducts() {
+    const relatedProductsContainer = document.getElementById("relatedProductsContainer");
+    const relatedProducts = getRandomProducts(productId);
+
+    relatedProducts.forEach(product => {
+        const productElement = document.createElement("div");
+        productElement.classList.add("related-product");
+
+        const productImage = document.createElement("img");
+        productImage.src = product.image;
+        productImage.alt = product.title;
+
+        const productTitle = document.createElement("div");
+        productTitle.classList.add("product-title");
+        productTitle.innerText = product.title;
+
+        const productPrice = document.createElement("div");
+        productPrice.classList.add("product-price");
+        productPrice.innerText = product.price;
+
+        productElement.appendChild(productImage);
+        productElement.appendChild(productTitle);
+        productElement.appendChild(productPrice);
+
+        relatedProductsContainer.appendChild(productElement);
+    });
+}
+
+displayRelatedProducts();

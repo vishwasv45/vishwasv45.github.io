@@ -249,6 +249,7 @@ height: 600px;
     color: black;
 }
 
+
 @media screen and (max-width: 480px) {
     .top-left, .top-right {
         font-size: 7px;
@@ -322,4 +323,43 @@ height: 600px;
     gap: 12px;
     width: 400px;
     justify-content: center;
+}
+
+#relatedProductsSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#relatedProductsSection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.related-products-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.related-product {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.related-product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.related-product .product-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.related-product .product-price {
+    font-size: 14px;
+    color: #555;
 }
