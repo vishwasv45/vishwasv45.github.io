@@ -162,3 +162,13 @@ navLinks.forEach(link => {
 
 // Initial rendering of all products
 renderProducts('all');
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  const mobileNav = document.querySelector('.mobile-nav');
+  mobileNav.classList.toggle('open');
+});
+document.querySelector('.close-menu').addEventListener('click', function() {
+  const mobileNav = document.querySelector('.mobile-nav');
+  mobileNav.classList.remove('open');
+});
+
